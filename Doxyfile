@@ -1,0 +1,49 @@
+# Doxyfile Configuration for AST Expression Generator & Parser
+
+PROJECT_NAME           = "AST Expression Generator & Parser"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "A tool for constructing Abstract Syntax Trees (AST) of mathematical expressions and validating them with a recursive descent parser."
+
+# Output configuration
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = English #or Slovene if preferred
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+
+# Input configuration
+INPUT                  = . README.md
+FILE_PATTERNS          = *.h *.cpp *.md
+RECURSIVE              = YES
+EXCLUDE                = cmake-build-debug/ .idea/ docs/
+USE_MDFILE_AS_MAINPAGE = README.md
+
+# Extraction configuration
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Warning configuration
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = NO
+
+# HTML configuration
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+GENERATE_TREEVIEW      = YES
+
+# LaTeX configuration
+GENERATE_LATEX         = NO
+
+# Graphviz/dot configuration (Disabled as it might not be installed)
+HAVE_DOT               = NO
+CLASS_GRAPH            = NO
+COLLABORATION_GRAPH    = NO
+GROUP_GRAPHS           = NO
+INCLUDE_GRAPH          = NO
+INCLUDED_BY_GRAPH      = NO
